@@ -1,0 +1,38 @@
+<div class="page-shell narrow">
+  <header class="page-header">
+    <h1>Admin · Grow the graph</h1>
+    <p>Add a new skill node and wire its prerequisite edges into the existing graph.</p>
+  </header>
+
+  <div class="card form-card">
+    <div class="banner-error" *ngIf="errorMessage()">{{ errorMessage() }}</div>
+    <div class="banner-success" *ngIf="successMessage()">{{ successMessage() }}</div>
+
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="field">
+        <label for="name">Skill name</label>
+        <input id="name" type="text" formControlName="name" placeholder="e.g. WebAssembly" />
+      </div>
+
+      <div class="field">
+        <label for="category">Category</label>
+        <input id="category" type="text" formControlName="category" placeholder="e.g. Language" />
+      </div>
+
+      <div class="field">
+        <label for="prerequisiteFor">Prerequisite for (comma-separated, optional)</label>
+        <input
+          id="prerequisiteFor"
+          type="text"
+          formControlName="prerequisiteFor"
+          placeholder="e.g. React, Web Accessibility"
+        />
+        <span class="hint">Existing skill names this new skill should point to as a PREREQUISITE_FOR edge.</span>
+      </div>
+
+      <button type="submit" class="btn btn-primary" [disabled]="loading() || form.invalid">
+        {{ loading() ? 'Creating…' : 'Create skill' }}
+      </button>
+    </form>
+  </div>
+</div>

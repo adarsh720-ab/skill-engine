@@ -1,0 +1,56 @@
+<div class="explorer" [class.collapsed]="hasSearched()">
+  <section class="search-panel" [class.compact]="hasSearched()">
+    <div class="search-intro" *ngIf="!hasSearched()">
+      <h1>Explore the skill graph</h1>
+      <p>Search a skill — React, Python, Kubernetes, Solidity — and watch its neighborhood grow live from CognoDB.</p>
+    </div>
+
+    <form class="search-form" (ngSubmit)="search()">
+      <input
+        type="text"
+        [ngModel]="query()"
+        (ngModelChange)="query.set($event)"
+        name="query"
+        placeholder="Search a skill, e.g. &quot;React&quot;"
+        autocomplete="off"
+      />
+      <select [ngModel]="maxHops()" (ngModelChange)="maxHops.set($event)" name="maxHops">
+        <option [ngValue]="1">1 hop</option>
+        <option [ngValue]="2">2 hops</option>
+        <option [ngValue]="3">3 hops</option>
+        <option [ngValue]="4">4 hops</option>
+        <option [ngValue]="5">5 hops</option>
+      </select>
+      <button type="submit" class="btn btn-primary" [disabled]="loading() || !query().trim()">
+        {{ loading() ? 'Searching…' : 'Search' }}
+      </button>
+    </form>
+
+    <div class="banner-error" *ngIf="errorMessage()">{{ errorMessage() }}</div>
+
+    <div class="stack-list" *ngIf="hasSearched() && stacks().length > 0">
+      <div class="stack" *ngFor="let stack of stacks()">
+        <div class="stack-header">
+          <span class="root-name">{{ stack.rootSkill }}</span>
+          <span class="chip">{{ stack.rootCategory }}</span>
+        </div>
+        <ul class="related-list">
+          <li *ngFor="let related of stack.relatedSkills">
+            <span class="dot"></span>
+            {{ related.name }}
+            <span class="related-category">{{ related.category }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="node-detail card" *ngIf="selectedNode()">
+      <h3>{{ selectedNode()!.id }}</h3>
+      <span class="chip">{{ selectedNode()!.category }}</span>
+    </div>
+  </section>
+
+  <section class="canvas-panel card" *ngIf="hasSearched()">
+    <app-graph-canvas [data]="graphData()" (nodeSelected)="selectNode($event)"></app-graph-canvas>
+  </section>
+</div>

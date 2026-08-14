@@ -1,0 +1,36 @@
+.narrow {
+  max-width: 560px;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    color: var(--color-text-muted);
+    margin-top: 0.4rem;
+    font-size: 0.9rem;
+  }
+}
+
+.form-card {
+  padding: 1.75rem;
+}
+
+.hint {
+  color: var(--color-text-faint);
+  font-size: 0.76rem;
+}
+
+.banner-success {
+  background: rgba(94, 234, 212, 0.1);
+  border: 1px solid rgba(94, 234, 212, 0.35);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}

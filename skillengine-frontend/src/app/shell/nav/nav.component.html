@@ -1,0 +1,26 @@
+<nav class="nav">
+  <a class="brand" routerLink="/explorer">
+    <span class="brand-mark">◈</span>
+    <span class="brand-name">SkillEngine</span>
+  </a>
+
+  <div class="links" *ngIf="auth.isAuthenticated()">
+    <a routerLink="/explorer" routerLinkActive="active">Explorer</a>
+    <!-- <a routerLink="/path-finder" routerLinkActive="active">Path Finder</a> -->
+    <a *ngIf="auth.isAdmin()" routerLink="/admin" routerLinkActive="active">Admin</a>
+  </div>
+
+  <div class="session">
+    <ng-container *ngIf="auth.isAuthenticated(); else guest">
+      <span class="who">
+        {{ auth.email() }}
+        <em class="role">{{ auth.role() === 'ROLE_ADMIN' ? 'admin' : 'user' }}</em>
+      </span>
+      <button class="btn btn-ghost" (click)="logout()">Sign out</button>
+    </ng-container>
+    <ng-template #guest>
+      <a class="btn btn-ghost" routerLink="/login">Sign in</a>
+      <a class="btn btn-primary" routerLink="/register">Get started</a>
+    </ng-template>
+  </div>
+</nav>

@@ -1,0 +1,83 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.9rem 1.75rem;
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(11, 15, 26, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.05rem;
+
+  .brand-mark {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+  }
+}
+
+.links {
+  display: flex;
+  gap: 0.35rem;
+  flex: 1;
+
+  a {
+    text-decoration: none;
+    color: var(--color-text-muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 0.5rem 0.85rem;
+    border-radius: var(--radius-sm);
+    transition: color 0.15s ease, background 0.15s ease;
+
+    &:hover {
+      color: var(--color-text);
+      background: var(--color-surface);
+    }
+
+    &.active {
+      color: var(--color-accent);
+      background: rgba(94, 234, 212, 0.08);
+    }
+  }
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  .who {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.82rem;
+    color: var(--color-text-muted);
+    line-height: 1.2;
+
+    .role {
+      font-family: var(--font-mono);
+      font-style: normal;
+      font-size: 0.68rem;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  a.btn {
+    text-decoration: none;
+  }
+}

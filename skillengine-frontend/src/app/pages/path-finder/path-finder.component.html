@@ -1,0 +1,86 @@
+<div class="page-shell">
+  <header class="page-header">
+    <h1>Path Finder</h1>
+    <p>Find every prerequisite chain between two skills in the graph.</p>
+  </header>
+
+  <form class="path-form card" [formGroup]="form" (ngSubmit)="search()">
+    <div class="field autocomplete">
+      <label for="startSkill">Start skill</label>
+      <input
+        id="startSkill"
+        type="text"
+        formControlName="startSkill"
+        placeholder="e.g. HTML & CSS"
+        autocomplete="off"
+        (focus)="showStartSuggestions.set(true)"
+        (blur)="showStartSuggestions.set(false)"
+      />
+      <ul class="suggestions" *ngIf="showStartSuggestions() && startSuggestions().length > 0">
+        <li
+          *ngFor="let s of startSuggestions()"
+          (mousedown)="$event.preventDefault()"
+          (click)="pickStart(s.name)"
+        >
+          <span>{{ s.name }}</span>
+          <span class="chip">{{ s.category }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <span class="arrow">→</span>
+
+    <div class="field autocomplete">
+      <label for="endSkill">End skill</label>
+      <input
+        id="endSkill"
+        type="text"
+        formControlName="endSkill"
+        placeholder="Not sure? Click to browse"
+        autocomplete="off"
+        (focus)="showEndSuggestions.set(true)"
+        (blur)="showEndSuggestions.set(false)"
+      />
+      <ul class="suggestions" *ngIf="showEndSuggestions() && endSuggestions().length > 0">
+        <li
+          *ngFor="let s of endSuggestions()"
+          (mousedown)="$event.preventDefault()"
+          (click)="pickEnd(s.name)"
+        >
+          <span>{{ s.name }}</span>
+          <span class="chip">{{ s.category }}</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="field hops">
+      <label for="maxHops">Max hops</label>
+      <input id="maxHops" type="number" formControlName="maxHops" min="1" max="5" />
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="loading() || form.invalid">
+      {{ loading() ? 'Searching…' : 'Find paths' }}
+    </button>
+  </form>
+
+  <div class="banner-error" *ngIf="errorMessage()">{{ errorMessage() }}</div>
+
+  <div class="results" *ngIf="paths().length > 0">
+    <aside class="path-list">
+      <button
+        *ngFor="let p of paths(); let i = index"
+        class="path-option"
+        [class.active]="i === selectedPathIndex()"
+        (click)="selectPath(i)"
+        type="button"
+      >
+        <span class="hop-count">{{ p.hopCount }} hop{{ p.hopCount === 1 ? '' : 's' }}</span>
+        <span class="path-preview">{{ p.path[0].name }} → … → {{ p.path[p.path.length - 1].name }}</span>
+      </button>
+    </aside>
+
+    <section class="canvas-panel card">
+      <app-graph-canvas [data]="graphData()" [pathMode]="true"></app-graph-canvas>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,892 @@
+{
+  "skills": [
+    {
+      "name": "HTML & CSS",
+      "category": "Frontend",
+      "isEntryPoint": true,
+      "aliases": ["html css", "html", "css"],
+      "prerequisiteFor": ["JavaScript", "Web Accessibility", "Responsive Web Design"]
+    },
+    {
+      "name": "JavaScript",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["TypeScript", "React", "Vue.js", "Angular", "Git & Version Control"]
+    },
+    {
+      "name": "TypeScript",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["React", "Angular", "Node.js"]
+    },
+    {
+      "name": "React",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Next.js", "React Testing"]
+    },
+    {
+      "name": "Vue.js",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Nuxt.js", "Frontend Testing"]
+    },
+    {
+      "name": "Angular",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["RxJS", "Frontend Testing"]
+    },
+    {
+      "name": "Next.js",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Frontend Architecture"]
+    },
+    {
+      "name": "Nuxt.js",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Frontend Architecture"]
+    },
+    {
+      "name": "RxJS",
+      "category": "Library",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Frontend Architecture"]
+    },
+    {
+      "name": "Responsive Web Design",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Frontend Architecture"]
+    },
+    {
+      "name": "Web Accessibility",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Frontend Architecture",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Frontend Testing", "Web Performance"]
+    },
+    {
+      "name": "Frontend Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Playwright"]
+    },
+    {
+      "name": "React Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Playwright"]
+    },
+    {
+      "name": "Playwright",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Web Performance",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Web Security"]
+    },
+    {
+      "name": "Web Security",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+
+    {
+      "name": "Java Core",
+      "category": "Backend",
+      "isEntryPoint": true,
+      "aliases": ["java", "core java", "java programming"],
+      "prerequisiteFor": ["Spring Boot", "SQL & Relational Databases", "Git & Version Control"]
+    },
+    {
+      "name": "Python",
+      "category": "Backend",
+      "isEntryPoint": true,
+      "aliases": ["python", "python programming", "python development"],
+      "prerequisiteFor": ["FastAPI", "Django", "SQL & Relational Databases"]
+    },
+    {
+      "name": "C#",
+      "category": "Backend",
+      "isEntryPoint": true,
+      "aliases": ["c#", "c sharp", ".net"],
+      "prerequisiteFor": [".NET", "SQL & Relational Databases", "Git & Version Control"]
+    },
+    {
+      "name": "PHP",
+      "category": "Backend",
+      "isEntryPoint": true,
+      "aliases": ["php", "php programming", "php development"],
+      "prerequisiteFor": ["Laravel", "SQL & Relational Databases", "Git & Version Control"]
+    },
+    {
+      "name": "Spring Boot",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["REST API Design", "Spring Security", "Spring Data JPA"]
+    },
+    {
+      "name": "Spring Security",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["OAuth 2.0 & OpenID Connect"]
+    },
+    {
+      "name": "Spring Data JPA",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["SQL & Relational Databases"]
+    },
+    {
+      "name": "FastAPI",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["REST API Design"]
+    },
+    {
+      "name": "Django",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["REST API Design"]
+    },
+    {
+      "name": ".NET",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["ASP.NET Core", "Entity Framework Core"]
+    },
+    {
+      "name": "ASP.NET Core",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["REST API Design"]
+    },
+    {
+      "name": "Entity Framework Core",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["SQL & Relational Databases"]
+    },
+    {
+      "name": "Laravel",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["REST API Design"]
+    },
+    {
+      "name": "REST API Design",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["API Security", "Microservices Architecture", "API Testing"]
+    },
+    {
+      "name": "API Security",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["OAuth 2.0 & OpenID Connect"]
+    },
+    {
+      "name": "OAuth 2.0 & OpenID Connect",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Microservices Architecture",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Docker", "Kafka", "Observability"]
+    },
+    {
+      "name": "Kafka",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Event-Driven Architecture"]
+    },
+    {
+      "name": "Event-Driven Architecture",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Docker", "Observability"]
+    },
+    {
+      "name": "Observability",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+
+    {
+      "name": "Mobile Development Fundamentals",
+      "category": "Mobile",
+      "isEntryPoint": true,
+      "aliases": ["mobile development", "mobile app development", "mobile apps"],
+      "prerequisiteFor": ["Kotlin", "Swift", "Flutter", "React Native", "Git & Version Control"]
+    },
+    {
+      "name": "Kotlin",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Android SDK", "Jetpack Compose"]
+    },
+    {
+      "name": "Android SDK",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Jetpack Compose", "Android Architecture"]
+    },
+    {
+      "name": "Jetpack Compose",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Android Architecture"]
+    },
+    {
+      "name": "Android Architecture",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Mobile API Integration"]
+    },
+    {
+      "name": "Swift",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["SwiftUI", "iOS SDK"]
+    },
+    {
+      "name": "SwiftUI",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["iOS Architecture"]
+    },
+    {
+      "name": "iOS SDK",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["iOS Architecture"]
+    },
+    {
+      "name": "iOS Architecture",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Mobile API Integration"]
+    },
+    {
+      "name": "Flutter",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Dart", "Mobile API Integration"]
+    },
+    {
+      "name": "Dart",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Flutter"]
+    },
+    {
+      "name": "React Native",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Mobile API Integration"]
+    },
+    {
+      "name": "Mobile API Integration",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Mobile Authentication", "Mobile Testing"]
+    },
+    {
+      "name": "Mobile Authentication",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Mobile Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+
+    {
+      "name": "Linux & Systems Fundamentals",
+      "category": "DevOps",
+      "isEntryPoint": true,
+      "aliases": ["linux", "linux administration", "devops", "systems administration"],
+      "prerequisiteFor": ["Bash", "Networking Fundamentals", "Git & Version Control", "Docker"]
+    },
+    {
+      "name": "Bash",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["CI/CD Pipelines", "Infrastructure as Code"]
+    },
+    {
+      "name": "Networking Fundamentals",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Cloud Fundamentals", "Network Security", "Kubernetes"]
+    },
+    {
+      "name": "Cloud Fundamentals",
+      "category": "Cloud Platform",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["AWS", "Azure", "Google Cloud"]
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud Platform",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Terraform", "Cloud Monitoring"]
+    },
+    {
+      "name": "Azure",
+      "category": "Cloud Platform",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Terraform", "Cloud Monitoring"]
+    },
+    {
+      "name": "Google Cloud",
+      "category": "Cloud Platform",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Terraform", "Cloud Monitoring"]
+    },
+    {
+      "name": "Docker",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "usedByPaths": ["Backend", "DevOps", "Data Engineering", "QA", "Web3"],
+      "prerequisiteFor": ["Kubernetes", "CI/CD Pipelines"]
+    },
+    {
+      "name": "Kubernetes",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Helm", "Cloud Monitoring"]
+    },
+    {
+      "name": "Helm",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "CI/CD Pipelines",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["GitHub Actions", "Infrastructure as Code"]
+    },
+    {
+      "name": "GitHub Actions",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Infrastructure as Code",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Terraform"]
+    },
+    {
+      "name": "Terraform",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Cloud Monitoring",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Observability"]
+    },
+    {
+      "name": "Network Security",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+
+    {
+      "name": "Python for Data Science",
+      "category": "Data Science",
+      "isEntryPoint": true,
+      "aliases": ["data science", "data scientist", "python data science"],
+      "prerequisiteFor": ["NumPy", "Pandas", "Statistics & Probability", "SQL & Relational Databases", "Git & Version Control"]
+    },
+    {
+      "name": "NumPy",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Pandas", "Scikit-learn"]
+    },
+    {
+      "name": "Pandas",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Data Visualization", "Scikit-learn"]
+    },
+    {
+      "name": "Statistics & Probability",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Machine Learning", "Experiment Design"]
+    },
+    {
+      "name": "Data Visualization",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["BI & Visualization Tools"]
+    },
+    {
+      "name": "BI & Visualization Tools",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Scikit-learn",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Machine Learning"]
+    },
+    {
+      "name": "Machine Learning",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Deep Learning", "MLOps"]
+    },
+    {
+      "name": "Deep Learning",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["PyTorch", "TensorFlow"]
+    },
+    {
+      "name": "PyTorch",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Generative AI"]
+    },
+    {
+      "name": "TensorFlow",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Generative AI"]
+    },
+    {
+      "name": "Generative AI",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["LLM Application Development"]
+    },
+    {
+      "name": "LLM Application Development",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Experiment Design",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "MLOps",
+      "category": "Data Science",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Docker", "Cloud Monitoring"]
+    },
+
+    {
+      "name": "Data Engineering Fundamentals",
+      "category": "Data Engineering",
+      "isEntryPoint": true,
+      "aliases": ["data engineering", "data engineer", "data engineering fundamentals"],
+      "prerequisiteFor": ["Python", "SQL & Relational Databases", "Git & Version Control", "Linux & Systems Fundamentals"]
+    },
+    {
+      "name": "SQL & Relational Databases",
+      "category": "Database",
+      "isEntryPoint": false,
+      "usedByPaths": ["Backend", "Data Science", "Data Engineering", "QA"],
+      "prerequisiteFor": ["PostgreSQL", "Database Design", "ETL & ELT"]
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Database",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Database Design"]
+    },
+    {
+      "name": "Database Design",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Data Warehousing"]
+    },
+    {
+      "name": "ETL & ELT",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Apache Airflow", "Data Pipelines"]
+    },
+    {
+      "name": "Apache Airflow",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Data Pipelines"]
+    },
+    {
+      "name": "Data Pipelines",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Apache Spark", "Kafka"]
+    },
+    {
+      "name": "Apache Spark",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Distributed Data Processing"]
+    },
+    {
+      "name": "Distributed Data Processing",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Data Lakehouse"]
+    },
+    {
+      "name": "Data Warehousing",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Data Lakehouse", "dbt"]
+    },
+    {
+      "name": "Data Lakehouse",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "dbt",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Data Warehousing"]
+    },
+
+    {
+      "name": "Cybersecurity Fundamentals",
+      "category": "Cybersecurity",
+      "isEntryPoint": true,
+      "aliases": ["cybersecurity", "cyber security", "infosec", "information security"],
+      "prerequisiteFor": ["Networking Fundamentals", "Linux & Systems Fundamentals", "Security Fundamentals"]
+    },
+    {
+      "name": "Security Fundamentals",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Web Security", "Cryptography", "Identity & Access Management"]
+    },
+    {
+      "name": "Cryptography",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Public Key Infrastructure"]
+    },
+    {
+      "name": "Public Key Infrastructure",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Identity & Access Management",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["OAuth 2.0 & OpenID Connect"]
+    },
+    {
+      "name": "OWASP Top 10",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Application Security"]
+    },
+    {
+      "name": "Application Security",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Security Testing"]
+    },
+    {
+      "name": "Security Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Penetration Testing"]
+    },
+    {
+      "name": "Penetration Testing",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Security Monitoring",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["SIEM"]
+    },
+    {
+      "name": "SIEM",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Incident Response"]
+    },
+    {
+      "name": "Incident Response",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+
+    {
+      "name": "Software Testing Fundamentals",
+      "category": "QA",
+      "isEntryPoint": true,
+      "aliases": ["software testing", "qa", "quality assurance", "qa testing"],
+      "prerequisiteFor": ["Test Case Design", "SQL & Relational Databases", "Git & Version Control"]
+    },
+    {
+      "name": "Test Case Design",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["API Testing", "Test Automation"]
+    },
+    {
+      "name": "API Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Postman", "Test Automation"]
+    },
+    {
+      "name": "Postman",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Test Automation",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Selenium", "Playwright", "Cypress"]
+    },
+    {
+      "name": "Selenium",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["CI/CD Pipelines"]
+    },
+    {
+      "name": "Cypress",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["CI/CD Pipelines"]
+    },
+    {
+      "name": "Performance Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["JMeter"]
+    },
+    {
+      "name": "JMeter",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Test Reporting",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["CI/CD Pipelines"]
+    },
+
+    {
+      "name": "Game Development Fundamentals",
+      "category": "Game Development",
+      "isEntryPoint": true,
+      "aliases": ["game development", "game dev", "game programming", "game developer"],
+      "prerequisiteFor": ["C++", "C#", "Game Mathematics", "Git & Version Control"]
+    },
+    {
+      "name": "C++",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Unreal Engine", "Game Physics"]
+    },
+    {
+      "name": "Game Mathematics",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Game Physics", "3D Graphics"]
+    },
+    {
+      "name": "Game Physics",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Unreal Engine"]
+    },
+    {
+      "name": "Unity",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Unity C# Development", "Game AI"]
+    },
+    {
+      "name": "Unity C# Development",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Game AI"]
+    },
+    {
+      "name": "Unreal Engine",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Blueprint Visual Scripting", "3D Graphics"]
+    },
+    {
+      "name": "Blueprint Visual Scripting",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "3D Graphics",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Shaders & Rendering"]
+    },
+    {
+      "name": "Shaders & Rendering",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Game AI",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+
+    {
+      "name": "Blockchain Fundamentals",
+      "category": "Web3",
+      "isEntryPoint": true,
+      "aliases": ["blockchain", "web3", "web 3", "blockchain development"],
+      "prerequisiteFor": ["Cryptography", "JavaScript", "Git & Version Control", "Ethereum"]
+    },
+    {
+      "name": "Ethereum",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Solidity", "EVM Architecture"]
+    },
+    {
+      "name": "Solidity",
+      "category": "Language",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Smart Contract Development"]
+    },
+    {
+      "name": "EVM Architecture",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Smart Contract Development", "Gas Optimization"]
+    },
+    {
+      "name": "Smart Contract Development",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Foundry", "Smart Contract Security"]
+    },
+    {
+      "name": "Foundry",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Smart Contract Testing"]
+    },
+    {
+      "name": "Smart Contract Testing",
+      "category": "Testing",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Smart Contract Security"]
+    },
+    {
+      "name": "Smart Contract Security",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Smart Contract Auditing"]
+    },
+    {
+      "name": "Smart Contract Auditing",
+      "category": "Security",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Gas Optimization",
+      "category": "Architecture",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    },
+    {
+      "name": "Web3.js & Ethers.js",
+      "category": "Library",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["DApp Development"]
+    },
+    {
+      "name": "DApp Development",
+      "category": "Framework",
+      "isEntryPoint": false,
+      "prerequisiteFor": ["Wallet Integration"]
+    },
+    {
+      "name": "Wallet Integration",
+      "category": "Tool",
+      "isEntryPoint": false,
+      "prerequisiteFor": []
+    }
+  ],
+  "combinedPaths": [
+    {
+      "name": "Full Stack Development",
+      "combinesEntryPoints": ["HTML & CSS", "Java Core"]
+    },
+    {
+      "name": "Full Stack Development",
+      "combinesEntryPoints": ["HTML & CSS", "Python"]
+    },
+    {
+      "name": "Full Stack Development",
+      "combinesEntryPoints": ["HTML & CSS", "C#"]
+    },
+    {
+      "name": "Full Stack Development",
+      "combinesEntryPoints": ["HTML & CSS", "PHP"]
+    }
+  ]
+}

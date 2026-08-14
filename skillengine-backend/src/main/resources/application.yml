@@ -1,0 +1,29 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: skill-path-engine
+
+cognodb:
+  uri: ${COGNODB_URI:}
+  username: ${COGNODB_USER:}
+  password: ${COGNODB_PASSWORD:}
+
+jwt:
+  secret: ${JWT_SECRET:t}
+  expiration-ms: ${JWT_EXPIRATION_MS:86400000}
+
+seed:
+  enabled: ${SEED_ENABLED:true}
+  admin:
+    email: ${SEED_ADMIN_EMAIL:admin@skillengine.dev}
+    password: ${SEED_ADMIN_PASSWORD:ChangeMe123!}
+  user:
+    email: ${SEED_USER_EMAIL:user@skillengine.dev}
+    password: ${SEED_USER_PASSWORD:ChangeMe123!}
+
+logging:
+  level:
+    com.wexa.skillengine: INFO
+    org.neo4j.driver: WARN

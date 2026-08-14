@@ -1,0 +1,46 @@
+.auth-shell {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-image: radial-gradient(circle at 50% 0%, rgba(94, 234, 212, 0.05), transparent 45%);
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 2.25rem 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  margin: 0.35rem 0 1.5rem;
+}
+
+.full {
+  width: 100%;
+  margin-top: 0.25rem;
+}
+
+.switch {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+
+  a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
