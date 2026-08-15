@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: skillengine-api
+    runtime: docker
+    dockerfilePath: ./skillengine-backend/Dockerfile
+    dockerContext: ./skillengine-backend
+    plan: free
+    envVars:
+      - key: COGNODB_URI
+        sync: false
+      - key: COGNODB_USER
+        sync: false
+      - key: COGNODB_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: SEED_ENABLED
+        value: "true"
+      - key: SEED_ADMIN_EMAIL
+        sync: false
+      - key: SEED_ADMIN_PASSWORD
+        sync: false
+      - key: SEED_USER_EMAIL
+        sync: false
+      - key: SEED_USER_PASSWORD
+        sync: false
+
+  - type: web
+    name: skillengine-ui
+    runtime: docker
+    dockerfilePath: ./skillengine-frontend/Dockerfile
+    dockerContext: ./skillengine-frontend
+    plan: free
+    envVars:
+      - key: API_BASE_URL
+        fromService:
+          name: skillengine-api
+          type: web
+          envVarKey: RENDER_EXTERNAL_URL

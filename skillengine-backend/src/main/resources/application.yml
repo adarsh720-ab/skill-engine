@@ -6,12 +6,12 @@ spring:
     name: skill-path-engine
 
 cognodb:
-  uri: ${COGNODB_URI:}
-  username: ${COGNODB_USER:}
-  password: ${COGNODB_PASSWORD:}
+  uri: ${COGNODB_URI}
+  username: ${COGNODB_USER}
+  password: ${COGNODB_PASSWORD}
 
 jwt:
-  secret: ${JWT_SECRET:t}
+  secret: ${JWT_SECRET}
   expiration-ms: ${JWT_EXPIRATION_MS:86400000}
 
 seed:
